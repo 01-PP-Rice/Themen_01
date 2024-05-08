@@ -13,4 +13,5 @@ const prompt = require('prompt-sync')({sigint: true});
 
 let zahl1 = prompt ("Bitte gib die erste Zahl ein: ");
 let zahl2 = prompt ("Bitte gib die zweite Zahl ein: ");
-let summe = zahl1 + zahl2;
+let summe = parseInt(zahl1) + parseInt(zahl2);
+console.log ("Die Summe aus den Zahlen ergibt: "+summe);

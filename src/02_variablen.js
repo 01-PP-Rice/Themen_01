@@ -9,7 +9,7 @@ console.log("Hi, ich bin " + firstName + " " + familyName + "!");
  */
 
 
-let test;
+/* let test;
 console.log("Inhalt: " + test);
 console.log("Datentyp: " + typeof test);
 console.log("-----------------------");
@@ -27,4 +27,12 @@ console.log("-----------------------");
 test = true;
 console.log("Inhalt: " + test);
 console.log("Datentyp: " + typeof test);
-console.log("-----------------------");
+console.log("-----------------------"); */
+
+
+let test;
+test = "hi";
+test = "hello";
+console.log("Inhalt: " + test);
+
+const test2 = "Hi";

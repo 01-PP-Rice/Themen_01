@@ -32,3 +32,4 @@ else
     console.log("John ist jünger!")
 } 
 
+// console.log( (isJohnOlder) ? "John is older" : "Mark is older");

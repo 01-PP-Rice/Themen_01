@@ -62,11 +62,32 @@ function outputNamesSRP(firstName, familyName) { // Parameter
 
     // 1. Funktionalität: string composing
     const GAP = " ";
-    let outStr = "Hallo, " + firstName + GAP + familyName + "!"
+    let outputStr = "Hallo, " + firstName + GAP + familyName + "!"
 
     // 2. Funktionalität: string output
-    console.log(outStr);
+    console.log(outputStr);
 
+}
+
+/***** Funktionen 03b *****/
+
+output(getString("Trung","Nguyen"));
+
+// 1. Funktionalität: string composing
+function getString(firstName, familyName) {
+    const GAP = " ";
+    let outputStr = "Hallo, " + firstName + GAP + familyName + "!"
+    return outputStr;
+}
+
+
+// 2. Funktionalität: string output
+// output("hi");
+// output(2);
+// output(true);
+
+function output(outputData) {
+    console.log(outputData);
 }
 
 

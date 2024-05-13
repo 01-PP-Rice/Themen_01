@@ -41,4 +41,4 @@ if (isJohnOlder)
 else 
 {
     console.log("Sie sind gleich alt!")
-}
+}*/

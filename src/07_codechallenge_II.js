@@ -65,12 +65,13 @@ function mapBeveragesToAge(name,age) {
 
 function output(outputData) {
     console.log(outputData);
- } */
+} */ 
+// Lösungsweg vom Dozenten
 
 
 const prompt = require('prompt-sync')({sigint: true});
  
-let firstName = prompt("Bitte geben Sie Ihren Namen ein:");
+let name = prompt("Bitte geben Sie Ihren Namen ein:");
 
 let age = prompt("Bitte geben Sie Ihr Alter ein:");
 
@@ -90,5 +91,5 @@ if (age >= 0 && age <= 5) {
     beverage = "ungültiges Alter";
 }
 
-console.log(firstName + ", Dein Getränk ist: " + beverage);
+console.log(name + ", Dein Getränk ist: " + beverage);
 

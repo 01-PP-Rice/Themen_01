@@ -34,7 +34,7 @@ Alter 13-17 // Cola
 //         break;
 // }
 
-const prompt = require('prompt-sync')({sigint: true});
+/* const prompt = require('prompt-sync')({sigint: true});
 const firstName = prompt("Bitte Namen eingeben: ");
 const age =  parseInt(prompt("Bitte Alter eingeben: ")); // "2" --> 2
 
@@ -65,7 +65,30 @@ function mapBeveragesToAge(name,age) {
 
 function output(outputData) {
     console.log(outputData);
- }
+ } */
 
 
+const prompt = require('prompt-sync')({sigint: true});
+ 
+let firstName = prompt("Bitte geben Sie Ihren Namen ein:");
+
+let age = prompt("Bitte geben Sie Ihr Alter ein:");
+
+age = parseInt(age);
+
+let beverage;
+
+if (age >= 0 && age <= 5) {
+    beverage = "Milch";
+} else if (age >= 6 && age <= 12) {
+    beverage = "Saft";
+} else if (age >= 13 && age <= 17) {
+    beverage = "Cola";
+} else if (age >= 18) {
+    beverage = "Wein";
+} else {
+    beverage = "ungültiges Alter";
+}
+
+console.log(firstName + ", Dein Getränk ist: " + beverage);
 

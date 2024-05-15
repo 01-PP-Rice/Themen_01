@@ -79,12 +79,12 @@ Solange die Variable existiert, bleibt dieser erhalten
 hier: Verkettung eines Strings // Transponierung
 */
 
-let a = ""; // Anfangswert - leerer String
-for (let i = 0; i < 5; i++) 
-{
-    a = a + "Test";
-    output("inhalt von a: " + a);
-}
+// let a = ""; // Anfangswert - leerer String
+// for (let i = 0; i < 5; i++) 
+// {
+//     a = a + "Test";
+//     output("inhalt von a: " + a);
+// }
 
 /**
  *   PRAXIS
@@ -133,18 +133,25 @@ function getSentenceArr(arr) {
 }
 
 /*** 01b. Funktionalität mit Array 2 */
-// output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
-// function getSentenceArr2(arr) {
-//     const GAP = " ";
-//     const PUNCT = ".";
-  
-//     for (let i = 0; i < arr.length; i++) // i = Sleifenindex
-//     {      
-//         output(arr[i]); 
-//     }
+output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
+function getSentenceArr2(arr) {
+    const GAP = " ";
+    const PUNCT = ".";
+    let str="";
 
-    
-// }
+    for (let i = 0; i < arr.length; i++) // i = Sleifenindex
+    {      
+        if (i == arr.length-1) {
+            str += arr[i] + PUNCT;
+        } else {
+            str = str + arr[i] + GAP;
+        }
+        
+    }
+
+    return str;
+}
+
 
 // Modul: Ausgabe in Konsole : Test
 // output("hi"); 

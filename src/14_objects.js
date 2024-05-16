@@ -34,7 +34,10 @@ let person = {
                 firstName:"Trung",
                 familyName:"Nguyen",
                 salary: [120000, 160000],
-                permission: true
+                permission: true,
+                sayHello: function(){
+                        return "Hallo, ich bin "+ this.firstName+"!";
+                }
 };
 
 
@@ -44,12 +47,13 @@ let person = {
 // output(person.familyName);
 // output(person.salary[1]);
 
-const text =  "Ich bin " + person.firstName + 
-              " und verdiene " + person.salary[1] +
-              " p.a.";
+// const text =  "Ich bin " + person.firstName + 
+//               " und verdiene " + person.salary[1] +
+//               " p.a.";
 
- output(text);
+//  output(text);
 
+output(person.sayHello());
 
 // Modul: Ausgabe | Test
 //output("hi");
